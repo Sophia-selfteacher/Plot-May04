@@ -1,0 +1,146 @@
+    1  cd C:\Users\yyphi\OneDrive\Desktop\data-shell
+    2  cd data-shell
+    3  cd OneDrive\Desktop\data-shell
+    4  cd OneDrive
+    5  cd Desktop
+    6  cd data-shell
+    7  ls
+    8  pwd
+    9  ls -F desktop
+   10  ls -F data-shell
+   11  pwd
+   12  ls -S data-shell
+   13  ls -s data-shell
+   14  ls --help
+   15  man ls
+   16  cd data
+   17  cd data-shell
+   18  cd data
+   19  cd ../..
+   20  pwd
+   21  cd data-shell
+   22  ls -a
+   23  ls
+   24  cd north-pacific-gyre/
+   25  ls
+   26  ls 2012-07-03/
+   27  cd ..
+   28  mkdir thesis
+   29  ls
+   30  mkdir Thesis
+   31  CD THESIS
+   32  cd THESIS
+   33  PWD
+   34  pwd
+   35  nano draft.txt
+   36  ls
+   37  touch my_file.txt
+   38  ls
+   39  touch test
+   40  ls
+   41  cd ..
+   42  ls
+   43  mv thesis/draft.txt thesis/quotes.txt
+   44  ls ~/thesis
+   45  ls ~\thesis
+   46  ls \thesis
+   47  mv thesis/quotes.txt .
+   48  ls
+   49  cp quotes.txt thesis/quotations.txt
+   50  ls quotes.txt thesis/quotations.txt
+   51  cp -r thesis thesis_backup
+   52  pwd
+   53  rm quotes.txt
+   54  ls
+   55  rm -ri thesis
+   56  rm --help
+   57  cd molecules
+   58  ls *.pdb
+   59  ls p*.pdb
+   60  ls ?ethane.pdb
+   61  ls ??ethane.pdb
+   62  ls ???ane.pdb
+   63  ls ethane.*
+   64  ls *t?ne.*
+   65  ls *t*ane.pdb
+   66  s *t??ne.pdb
+   67  ls *t??ne.pdb
+   68  wc cubane.pdb
+   69  wc --help
+   70  wc -l *.pdb > lengths.txxt
+   71  wc -l *.pdb > lengths.txt
+   72  cat lengths.txt
+   73  less lengths.txt
+   74  less --help
+   75  sort -n lengths.txt > sorted-lengths.txt
+   76  sort --help
+   77  head -n 1 soreted-lengths.txt
+   78  head -n 1 sorted-lengths.txt
+   79  head --help
+   80  echo --help
+   81  echo The echo commmand prints text
+   82  cat testfile0.txt
+   83  echo hello > test0.txt
+   84  cat test0.txt
+   85  echo world > test0.txt
+   86  cat test0.txt
+   87  echo hello > test1.txt
+   88  echo world >> test1.txt
+   89  cat test1.txt
+   90  cd..
+   91  cd ..
+   92  cd creatures
+   93  ls
+   94  cat --help
+   95  cd ..
+   96  cd molecules
+   97  ls
+   98  sort -n lengths.txt | head -n 1
+   99  wc -l *.pdb | sort -n | head -n 1
+  100  cd ..
+  101  cd north-pacific-gyre/
+  102  cd 2012-07-03/
+  103  ls
+  104  wc -l *.txt
+  105  wc -l *.txt | sort -n | head -n 5
+  106  wc -l *.txt | sort -n | tail -n 5
+  107  ls *z.txt
+  108  ls *Z.txt
+  109  *[AB].txt
+  110  ls *[AB].txt 
+  111  cd ../..
+  112  cd creature
+  113  cd creature
+  114  cd creatures
+  115  ls
+  116  head -n 5 basilisk.dat minotaur.dat unicorn.dat 
+  117  for file in basilisk.dat minotaur.dat unicorn.dat ; do   head -n 2 $file | tail -n 1; done
+  118  cd ..
+  119  cd north-pacific-gyre/
+  120  cd 2012-07-03/
+  121  for datafile in NENE*[AB].txt; do   echo $datafile ; done
+  122  for datafile in NENE*[AB].txt; do   echo $datafile stats-$datafile ; done
+  123  for datafile in NENE*[AB].txt; do   bash goostats $datafile stats-$datafile ; done
+  124  for datafile in NENE*[AB].txt; do echo $datafile;  bash goostats $datafile stats-$datafile ; done
+  125  history > ~/desktop/myhistory.txt
+  126  history > myhistory.txt
+  127  cd ../..
+  128  cd molecules/
+  129  nano molecules.sh
+  130  bash molecules.sh
+  131  nano molecules.sh
+  132  bash molecules.sh
+  133  nano molecules.sh
+  134  nano molecules.sh octane.pdb
+  135  bash molecules.sh octane.pdb
+  136  nano molecules.sh
+  137  bash molecules.sh octane.pdb 15 5
+  138  nano molecules.sh
+  139  bash molecules.sh octane.pdb 15 5
+  140  cdd ../north-pacific-gyre/2012-07-03/
+  141  cd ../north-pacific-gyre/2012-07-03/
+  142  nano do-stats.sh
+  143  bash do-stats.sh NENE*[AB].txt
+  144  grip --help
+  145  --help
+  146  history > myhistory.txt
